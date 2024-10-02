@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    background-image: url("fondo.png")
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+h1 {
+    color: rgb(106, 18, 157);
+}
+  header{
+    background-color: rgb(0, 0, 0);
+  }
+  .logo {
+    width: 80px;
+    padding: 20px;
+  }
+  .main-navigation{
+    background-color: black;
+  }
+  .main-navigation a {
+    color: azure;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+  }
+.main-navigation a:hover{
+  background-color: blueviolet;
+  color: aliceblue;
+}  
