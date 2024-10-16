@@ -131,9 +131,15 @@ border-radius: 7px;
   color: white;
 }
 
-#services {
-  min-height: 100vh; /* Ensure the services section is tall enough */
-  background-color: white; /* Background color for the section */
+
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center the items */
+  gap: 20px; /* Space between items */
+  margin: 20px; /* General margin for the section */
 }
 
 .services-banner {
@@ -177,7 +183,41 @@ border-radius: 7px;
 .service-item img {
   width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
-}}
+}
+
+/* Individual Service Item */
+.service-item {
+  flex: 1 1 200px; /* Allow flex items to grow and shrink */
+  max-width: 300px; /* Optional: limit max width for larger screens */
+  padding: 10px; /* Padding for service items */
+  text-align: center; /* Center text */
+  background-color: #f9f9f9; /* Background color for service items */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Responsive Text for Headings */
+.service-item h4, .about-info h4 {
+  font-size: 1.5em; /* Responsive font size */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .service-item {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px; /* Space below each item */
+  }
+}
+
+/* Media Queries for Very Small Screens */
+@media (max-width: 480px) {
+  .about-info, .services {
+    margin: 10px; /* Less margin for smaller devices */
+  }
+
+  .about-info h4, .service-item h4 {
+    font-size: 1.2em; /* Slightly smaller font for mobile */
+  }
+}
 
 /* About Section */
 #about {
@@ -189,13 +229,14 @@ border-radius: 7px;
 
 /* About Banner */
 .about-banner {
-  background-image: url('about_banner.png'); /* If you have a similar banner image */
-  background-size: cover;
-  background-position: center;
-  height: 250px; /* Keep the height consistent with the services section */
+  background-image: url('about_banner.png'); /* Update this if necessary */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  height: 250px; /* Ensure height is set */
   display: flex;
   align-items: center;
   justify-content: center; /* Keep content centered */
+  width: 100%; /* Ensure the banner takes the full width */
 }
 
 /* Make sure this matches your services banner color */
@@ -207,11 +248,15 @@ border-radius: 7px;
 
 /* About Information */
 .about-info {
-  background-color: white; /* Light gray background */
+  background-color: #f0f0f0; /* Light gray background */
   padding: 20px; /* Padding around the text */
   text-align: center; /* Center the text */
   margin: 20px; /* Adjust this value to control spacing */
   border-radius: 8px; /* Optional: adds rounded corners */
+  max-width: 800px; /* Limit max width */
+  width: 90%; /* Make it responsive */
+  margin-left: auto; /* Center the section */
+  margin-right: auto; /* Center the section */
 }
 
 
@@ -267,3 +312,15 @@ border-radius: 7px;
   margin-top: 8px; /* Space between image and text */
 }
 
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+   #services {
+     margin-bottom: 0; /* Remove bottom margin on smaller screens */
+   }
+
+   #about {
+     margin-top: 0; /* Remove top margin on smaller screens */
+   }
+
+   /* Adjust any other elements as needed */
+}
