@@ -7,7 +7,7 @@ body{
 
 }
 h1 {
-    color: rgb(106, 18, 157);
+    color: rgb(181, 117, 211);
 }
 img {
   max-width: 100%;
@@ -92,4 +92,41 @@ border-radius: 7px;
   justify-content: center; /* Center the cards */
   gap: 20px; /* Space between cards */
   margin-top: 20px; /* Space above cards */
+}
+#tea {
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+#services {
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+#about {
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+#contact {
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+.main-footer {
+  background-color: black;
+  min-height: 12em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+.social a {
+  color:white;
+  text-decoration: none;
+}
+.social {
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.copyright {
+  margin: 0px;
+  color: white;
 }
