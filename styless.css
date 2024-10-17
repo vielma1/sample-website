@@ -28,18 +28,18 @@ img {
     background-color: black;
   }
   .main-navigation a {
-    color: azure;
+    color: white;
     text-decoration: none;
     display: inline-block;
     padding: 15px;
   }
 .main-navigation a:hover{
   background-color: blueviolet;
-  color: aliceblue;
+  color: white;
 }
 .banner {
   min-width: 50vh;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +50,7 @@ img {
 .banner-button {
 display: block;
 background-color:rgb(0, 0, 0);
-color: lavender;
+color: white;
 text-decoration: none;
 padding: 12px;
 border-radius: 7px;
@@ -74,8 +74,11 @@ border-radius: 7px;
   width: 100%;
   height: auto;
 }
-.card-context {
-  padding: 10px;
+  
+.card-context h4 {
+    padding: 10px;  
+    font-size: 24px; /* Adjust to the size you want */
+    color: rgb(181, 117, 211);
 }
 .centered-image {
   display: flex; /* Use Flexbox to center */
@@ -175,7 +178,7 @@ border-radius: 7px;
   text-align: center; /* Center text */
   background-color: white; /* Background color for items */
   margin: 10px; /* Margin around each item */
-  border: 1px solid #ccc; /* Optional: border for visual separation */
+  border: none; /* Optional: border for visual separation */
   border-radius: 8px; /* Optional: rounded corners */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
 }
@@ -220,7 +223,8 @@ border-radius: 7px;
 }
 
 /* About Section */
-#about {
+body #about {
+  margin-top: 50px !important; /* Force margin to apply */
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
@@ -248,7 +252,7 @@ border-radius: 7px;
 
 /* About Information */
 .about-info {
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: white;
   padding: 20px; /* Padding around the text */
   text-align: center; /* Center the text */
   margin: 20px; /* Adjust this value to control spacing */
@@ -310,6 +314,8 @@ border-radius: 7px;
 .leadership-member h4 {
   text-align: center; /* Center the text */
   margin-top: 8px; /* Space between image and text */
+  font-size: 24px; /* Same size as Organic Coffee */
+  color: rgb(181, 117, 211); /* Updated color */
 }
 
 /* Media Queries for Smaller Screens */
@@ -323,4 +329,88 @@ border-radius: 7px;
    }
 
    /* Adjust any other elements as needed */
+}
+
+/* Apply the same styles to other headings */
+.card-context h4,
+.service-item h4,
+.ceo-container h4,
+.leadership-member h4 {
+    font-size: 18px; /* Same size as Organic Coffee */
+    color: rgb(181, 117, 211); /* Updated color */
+}
+
+
+
+/* Contact Banner */
+.contact-banner {
+  background-image: url('contact_banner.png'); /* Update this if necessary */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  height: 250px; /* Ensure height is set */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Keep content centered */
+  width: 100%; /* Ensure the banner takes the full width */
+}
+
+/* Change size and color of Contact Us heading */
+#contact h2 {
+  color: rgb(181, 117, 211); /* Set your desired color */
+  font-size: 24px; /* Adjust the size to match the other headings */
+}
+
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 0 auto; /* Center the entire section */
+  padding: 20px; /* Add some padding to the section */
+  background-color: white; /* Light background for contrast */
+}
+
+/* Contact Information */
+.contact-info {
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space between contact info and form */
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  max-width: 400px; /* Limit the width of the form */
+  margin: 20px auto; /* Center the form */
+  padding: 20px;
+  border: 1px solid rgb(181, 117, 211); /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: white; /* Background color */
+}
+
+/* Form Elements */
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Input border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: rgb(181, 117, 211); /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.contact-form button:hover {
+  background-color: rgb(150, 100, 190); /* Change button color on hover */
 }
