@@ -24,6 +24,7 @@ header{
   left: 0; /* Align it to the left */
   right: 0; /* Align it to the right */
   z-index: 1000; /* Ensure it stays on top of other content */
+
 }
 .logo {
   width: 80px;
@@ -42,6 +43,7 @@ header{
 background-color: blueviolet;
 color: white;
 }
+
 .banner {
 min-width: 50vh;
 background-color: white;
@@ -54,6 +56,7 @@ background-size: cover;
 margin-top: 60px; /* Adjust this value based on the height of your header */
 z-index: 0; /* Ensure the banner appears below the header */
 }
+
 .banner-button {
 display: block;
 background-color:rgb(0, 0, 0);
@@ -63,45 +66,47 @@ padding: 12px;
 border-radius: 7px;
 margin-left: 20px; /* Adjust this value to create space above */
 }
+
+/* Main content section */
 .content {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 10px;
-margin-left: auto;
-margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* Card styling */
 .card {
-display: flex; /* Make the card a flex container */
-flex-direction: column; /* Stack children vertically */
-justify-content: space-between; /* Space out the children */
-flex-basis: 30%; /* Keep the width of the card */
-text-align: center; /* Center text inside the card */
-background-color: white; /* Set background color */
-margin: 10px; /* Margin around each card */
-height: 350px; /* Set a fixed height for uniformity */
+  display: flex; /* Make the card a flex container */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space out the children */
+  flex-basis: 30%; /* Width of the card (can be adjusted as per your need) */
+  text-align: center; /* Center text inside the card */
+  background-color: white; /* Set background color */
+  margin: 10px; /* Margin around each card */
+  height: 350px; /* Set a fixed height for uniformity */
 }
 
 .card img {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
-
-
 .card-context a {
-display: inline-block; /* Make it behave like a button */
-background-color: rgb(181, 117, 211); /* Button background color */
-color: white; /* Button text color */
-text-decoration: none; /* Remove underline */
-padding: 10px 20px; /* Padding for size */
-border-radius: 5px; /* Rounded corners */
-margin-top: 10px; /* Space above the button */
-text-align: center; /* Center the text */
+  display: inline-block; /* Make it behave like a button */
+  background-color: rgb(181, 117, 211); /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Padding for size */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 10px; /* Space above the button */
+  text-align: center; /* Center the text */
 }
 
 .card-context a:hover {
-background-color: rgb(150, 100, 190); /* Change color on hover */
+  background-color: rgb(150, 100, 190); /* Change color on hover */
 }
 
 .card-context h4 {
@@ -109,22 +114,62 @@ background-color: rgb(150, 100, 190); /* Change color on hover */
   font-size: 24px; /* Adjust to the size you want */
   color: rgb(181, 117, 211);
 }
+
+/* Centered image container */
 .centered-image {
-display: flex; /* Use Flexbox to center */
-justify-content: center; /* Center horizontally */
-margin: 20px 0; /* Optional: Add some space above and below */
+  display: flex; /* Use Flexbox to center */
+  justify-content: center; /* Center horizontally */
+  margin: 20px 0; /* Optional: Add some space above and below */
 }
 
 .centered-image img {
-max-width: 100%; /* Ensure the image is responsive */
-height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
 }
+
+/* Card container */
 .card-container {
-display: flex; /* Use flexbox to align cards */
-justify-content: center; /* Center the cards */
-gap: 20px; /* Space between cards */
-margin-top: 20px; /* Space above cards */
+  display: flex; /* Use flexbox to align cards */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px; /* Space above cards */
 }
+
+/* Media Query for Tablets and Small Screens */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards in the container */
+  }
+
+  .card {
+    flex-basis: 100%; /* Make cards take full width on smaller screens */
+    max-width: 100%; /* Remove max width limitation */
+    margin: 10px 0; /* Space between stacked cards */
+  }
+}
+
+/* Media Query for Very Small Screens (Mobile) */
+@media screen and (max-width: 480px) {
+  .card {
+    height: auto; /* Remove fixed height for more flexibility */
+    padding: 20px; /* Increase padding for better spacing */
+  }
+
+  .card-context h4 {
+    font-size: 18px; /* Reduce font size on smaller screens */
+  }
+
+  .card-context a {
+    padding: 8px 16px; /* Adjust button padding for small screens */
+    font-size: 14px; /* Reduce button text size */
+  }
+}
+
+
+  
+
+
 #tea {
 min-height: 100vh;
 background-color: white;
@@ -184,6 +229,7 @@ align-items: center;
 justify-content: center; /* Keep content centered */
 padding-right: 50px; /* Add padding on the right */
 width: 100%; /* Ensure the banner takes the full width */
+margin-top:300px; /* Margin above and below */
 }
 
 .services-banner h2 {
@@ -289,21 +335,22 @@ padding: 15px; /* Consistent padding */
 
 /* CEO Image */
 .ceo-container {
-display: flex;
-flex-direction: column; /* Stack the text and image vertically */
-align-items: center; /* Center the items */
-margin: 0px 0; /* Margin above and below */
+  display: flex;
+  flex-direction: column; /* Stack the text and image vertically */
+  align-items: center; /* Center the items */
+  margin: 0px 0; /* Margin above and below */
 }
 
 .ceo-image {
-  width: 100%; /* Make CEO image responsive */
-  max-width: 300px; /* Limit max width for smaller screens */
+  width: 100%; /* Keep the image responsive */
+  max-width: 500px; /* Increase the max width to make the image larger */
 }
 
 .ceo-container h4 {
-margin-top: 10px; /* Space between image and text */
-color: rgb(181, 117, 211); /* Match the color with the other headings */
+  margin-top: 10px; /* Space between image and text */
+  color: rgb(181, 117, 211); /* Match the color with the other headings */
 }
+
 
 /* Leadership Team */
 .leadership-team {
