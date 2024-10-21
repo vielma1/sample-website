@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styless.css"> <!-- Link your CSS file -->
-    <title>Tea Page</title>
+    <title>I'm ok! TEA</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -12,66 +13,76 @@
 <a href="tea.html">
     <img class="logo" src="tea_icon_logo.png" alt="logo">
 </a>
-<nav class="main-navigation">
-    <a href="index.html">home</a>
-    <a href="tea.html">tea</a>
-    <a href="#services">services</a>
-    <a href="#about">about</a>
-    <a href="#contact">contact</a>
-</nav>
+
+<header>
+    <a href="tea.html">
+        <img class="logo" src="tea_icon_logo.png" alt="logo">
+    </a>
+    <nav class="main-navigation">
+        <a href="index.html">Home</a>
+        <a href="tea.html">Tea</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
-<div class="banner">
-<h1>Do you like TEA?</h1>
-<a class="banner-button" href="tea.html">
-    Find out more
-</a>
-</div>
 
-
-<!-- Banner Section -->
 <div class="banner">
     <h1>Do you like TEA?</h1>
-    <a href="#" class="banner-button">Discover More</a>
+    <a class="banner-button" href="tea.html">Find out more</a>
 </div>
 
-<!-- Content Section -->
-<div class="content">
-    <h2>Welcome to the Tea World</h2>
-    <p>Explore our wide variety of teas, their benefits, and the stories behind them.</p>
-    
-    <div class="ceo-container">
-        <img src="ceo_image.jpg" alt="CEO Image" class="ceo-image">
-        <h4>Meet Our CEO</h4>
+<!-- Main Content Section -->
+<main class="content">
+    <!-- Centered image container -->
+    <div class="centered-image">
+        <img src="banner_3.png" alt="image1">
     </div>
 
+    <!-- Card container for the three tea images -->
     <div class="card-container">
+        <!-- Card One -->
         <div class="card">
-            <img src="_tea-09.png" alt="Tea 1">
+            <img src="a.png">
             <div class="card-context">
-                <h4>Green Tea</h4>
-                <a href="#">Learn More</a>
+                <h4>Organic Coffee</h4>
+                <p>Explore all kinds of curated gift packs.</p>
+                <a href="tea.html">Shop now</a>
             </div>
         </div>
+        <!-- Card Two -->
         <div class="card">
-            <img src="_tea-10.png" alt="Tea 2">
+            <img src="b.png">
             <div class="card-context">
-                <h4>Black Tea</h4>
-                <a href="#">Learn More</a>
+                <h4>Premium Tea</h4>
+                <p>Meet our limited edition tea collection.</p>
+                <a href="tea.html">Shop now</a>
             </div>
         </div>
+        <!-- Card Three -->
         <div class="card">
-            <img src="_tea-11.png" alt="Tea 3">
+            <img src="c.png">
             <div class="card-context">
-                <h4>Herbal Tea</h4>
-                <a href="#">Learn More</a>
+                <h4>Fancy Cookies</h4>
+                <p>It's back. Our best-selling cookies.</p>
+                <a href="tea.html">Shop now</a>
             </div>
         </div>
     </div>
-</div>
+
+    
+
+    
+</main>
 
 <!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+<footer class="main-footer">
+    <p class="copyright">&copy; 2024 I'm ok! Tea</p>
+    <nav class="social">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+    </nav>
 </footer>
 
 </body>
